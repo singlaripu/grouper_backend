@@ -1,7 +1,39 @@
 {% extends 'base.html' %}
+{% load compress %}
 
-{% block headline %}<h1>Welcome to Bangalore Socials</h1>{% endblock headline %}
+{% block css1 %}
+
+ 	{% compress css %}
+      <link rel="stylesheet" href="{{ STATIC_URL }}css/base.css" />
+      <link rel="stylesheet" href="{{ STATIC_URL }}css/cover.css" />
+   	{% endcompress %}
+
+{% endblock css1 %}
+
+
+{% block headline %}
+
+	Social Dating
+
+{% endblock headline %}
 
 {% block content %}
-<p>Howdy{% if user.is_authenticated %} {{ user.username }}{% endif %}!</p>
-{% endblock %}
+
+	<div class="inner cover">
+    <h1 class="cover-heading">Coming Soon</h1>
+    <p class="lead">
+
+        A unique social dating experience for Bangalore.
+
+    </p>
+    <p class="lead">
+      <a href="#" class="button green watch-video">Watch the Video
+      	<!-- <span>
+      		<img src="{{ STATIC_URL }}img/btn_arrow.svg" data-fallback="{{ STATIC_URL }}img/btn_arrow.png">
+      	</span>	 -->
+      </a>
+    </p>
+
+
+<!-- <p>{% if user.is_authenticated %} {{ user.username }}{% endif %}!</p> -->
+{% endblock content %}

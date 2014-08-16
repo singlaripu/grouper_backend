@@ -1,0 +1,58 @@
+
+body {
+  background: url('{{ STATIC_URL }}img/bg_header.jpg');
+}
+
+.watch-video {
+margin-bottom: 1em;
+}
+
+/*img {
+max-width: 100%;
+height: auto;
+vertical-align: middle;
+border: 0;
+-ms-interpolation-mode: bicubic;
+}*/
+
+a.button {
+background-color: #9fd067;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+-ms-border-radius: 6px;
+-o-border-radius: 6px;
+border-radius: 6px;
+box-shadow: 2px 2px 0 #579115;
+color: #fff;
+display: inline-block;
+font-size: 13px;
+letter-spacing: 1px;
+margin: 0;
+overflow: visible;
+padding: 15px 20px 12px;
+position: relative;
+text-shadow: 1px 0 0 rgba(0,0,0,.1);
+text-transform: uppercase;
+/*border-right: 48px solid #86c440;*/
+transition: background-color .3s ease-in-out;
+-moz-transition: background-color .3s ease-in-out;
+-o-transition: background-color .3s ease-in-out;
+-webkit-transition: background-color .3s ease-in-out;
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
